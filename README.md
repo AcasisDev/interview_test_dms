@@ -58,3 +58,9 @@ Untuk memastikan halaman AMP valid:
 Buka halaman <http://localhost:3000/amp#development=1>.
 
 Buka Developer Tools dan periksa Console. Seharusnya akan muncul pesan AMP validation successful.
+
+<img width="1751" height="935" alt="image" src="https://github.com/user-attachments/assets/5497b772-a22f-40bf-bb05-f7ffc33031f7" />
+
+<img width="814" height="896" alt="image" src="https://github.com/user-attachments/assets/f470ccee-c51f-403b-9113-cb64761bb2ec" />
+
+
