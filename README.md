@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Interview Test DMS FE: Next.js + AMP
 
-## Getting Started
+Teknologi yang Digunakan
+Next.js 15 (App Router)
 
-First, run the development server:
+TypeScript
 
-```bash
+AMP (Accelerated Mobile Pages)
+
+Tailwind CSS untuk styling
+
+Atomic Design sebagai metodologi arsitektur komponen
+
+Panduan Menjalankan Proyek
+Berikut adalah langkah-langkah untuk menjalankan aplikasi ini secara lokal.
+
+1. Kloning Repository
+Pertama, kloning repository ini ke mesin lokal Anda.
+
+git clone
+cd [nama-folder-proyek]
+
+1. Instalasi Dependensi
+Instal semua dependensi yang dibutuhkan menggunakan npm.
+
+npm install
+
+3. Mode Development
+Jalankan server development untuk memulai aplikasi.
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Aplikasi akan tersedia di <http://localhost:3000>.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4. Mode Produksi (Untuk Pengujian)
+Untuk melakukan pengujian performa yang akurat dengan Lighthouse, jalankan aplikasi dalam mode produksi.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+npm run build
+npm start
 
-## Learn More
+Aplikasi akan berjalan di <http://localhost:3000>.
 
-To learn more about Next.js, take a look at the following resources:
+Validasi dan Pengujian
+Uji Lighthouse
+Untuk memvalidasi skor, jalankan audit Lighthouse menggunakan Google Chrome.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Buka browser dalam mode Incognito.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Buka Developer Tools (F12) dan pilih tab Lighthouse.
 
-## Deploy on Vercel
+Atur Device ke Mobile.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Jalankan audit untuk rute / dan /amp.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Validasi AMP
+Untuk memastikan halaman AMP valid:
+
+Buka halaman <http://localhost:3000/amp#development=1>.
+
+Buka Developer Tools dan periksa Console. Seharusnya akan muncul pesan AMP validation successful.
