@@ -42,7 +42,7 @@ export default function AmpPage() {
         <style
           amp-custom=""
           dangerouslySetInnerHTML={{
-            __html: styles.css,
+            __html: styles,
           }}
         />
       </head>
